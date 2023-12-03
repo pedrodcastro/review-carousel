@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --light-gray: #d3d3d3;
+  --white: #fff;
+  --bright-blue: #0096ff;
+  --charcoal: #36454f;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--light-gray);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: var(--charcoal);
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.line {
+  width: 50px;
+  border-bottom: 4px solid var(--bright-blue);
+}
+
+.container {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+img {
+  border-radius: 50%;
+  filter: drop-shadow(4px 4px var(--bright-blue));
+  max-width: 100px;
+}
+
+#name {
+  font-weight: 800;
+}
+
+#job {
+  text-transform: uppercase;
+  color: var(--bright-blue);
+}
+
+#info {
+  max-width: 500px;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--bright-blue);
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  cursor: pointer;
+}
+
+i {
+  font-size: 20px;
+}
+
+.random-btn {
+  padding: 8px;
+  font-weight: 500;
+  font-family: 'Open Sans',  sans-serif;
+  color: var(--bright-blue);
+  border-color: var(--bright-blue);
+  border-radius: 4px;
+  background-color: var(--white);
+}
+
+.random-btn:hover {
+  cursor: pointer;
+}
